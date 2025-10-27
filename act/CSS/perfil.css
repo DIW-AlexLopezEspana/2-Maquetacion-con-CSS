@@ -92,7 +92,8 @@ body {
 }
 .infoTrabajos {
   float: left;
-  max-width: 15%;
+
+  max-width: 100%;
   background-color: rgba(138, 202, 224, 0.212);
   padding: 4%;
   margin: 17px;
