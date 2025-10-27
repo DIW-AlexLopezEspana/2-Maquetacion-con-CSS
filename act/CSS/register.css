@@ -2,47 +2,43 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #2196f3;
 }
 
 header {
-  float: left;
-  max-height: 700px;
-
-  width: 100%;
-  height: 10%;
-  background-color: red;
   margin: 0;
   padding: 0;
-
+  height: 700px;
+  overflow: hidden;
 }
 
 header img {
-    float: left;
-    width: 100%;
-    max-height: 700px;
-    margin:0;
-    padding: 0;
-    object-fit: cover;
+  float: left;
+  width: 100%;
+  height: 700px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
-
-
-.contenedor{
-    border-top-left-radius: 18px ;
-    border-top-right-radius:18px  ;
+.contenedor {
+  float: left;
+  width: 100%;
+  margin-top: -200px;
+  background-color: rgb(255, 255, 255);
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  color: white;
+  text-align: center;
 }
-
-
-
-
 .datos {
   float: left;
-  width: 60%;
-  margin-top: 8%;
+  width: 100%;
+  margin-top: 3%;
   margin-bottom: 20px;
 }
 
-.textInicioSesion {
-  font-size: 18px;
+.textRegistrarse {
+  font-size: 25px;
   color: #1976d2;
 }
 
@@ -84,6 +80,7 @@ header img {
   border: 2px solid lightgrey;
   border-radius: 25px;
   padding: 2px;
+  margin-bottom: 12px;
 }
 .inputContra {
   width: 85%;
@@ -112,7 +109,6 @@ header img {
   color: white;
   border: none;
   margin-top: 22px;
-  margin-left: 12%;
   padding: 12px;
   border-radius: 25px;
   font-size: 16px;
@@ -123,14 +119,14 @@ header img {
 }
 
 .lineaSeparacion {
-  margin-top: 5%;
+  margin-top: 3%;
   text-decoration: none;
+  color: grey;
 }
 .lineaPrincipio {
-  margin-left: 23%;
+  margin-left: 24%;
   width: 25%;
   float: left;
-  margin-right: 10px;
   border-top: 1px solid #ccc;
 }
 .lineaFinal {
@@ -188,14 +184,6 @@ header img {
   color: #2196f3;
 }
 
-.contenedorRegistrarse {
-  overflow: hidden;
-  border: 2px solid #2196f3;
-  border-radius: 25px;
-  margin-top: 3%;
-  padding: 4px 0 4px 0;
-  padding-left: 30%;
-}
 .btnCrearCuenta {
   float: left;
   width: 60%;
@@ -210,7 +198,7 @@ header img {
 .contenedorOlvidarContra {
   width: 100%;
   text-align: center;
-  margin-top: 12px;
+  margin-top: 8px;
 }
 .contenedorOlvidarContra strong {
   color: #2196f3;
@@ -225,21 +213,16 @@ header img {
 .logo {
   float: left;
   width: 100%;
-  margin-left: 10%;
   padding-top: 10px;
   clear: both;
 }
 .logo img {
   width: 200px;
   height: 100px;
-  margin-left: 30%;
-  max-width: 80%;
 }
 .logo p {
   font-size: 14px;
   color: #666;
-  margin-left: 17%;
-  max-width: 80%;
 }
 .logo a {
   color: #2196f3;

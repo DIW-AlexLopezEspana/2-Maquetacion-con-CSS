@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+.logoYPerfil {
+  clear: both;
+  padding-bottom: 5%;
+}
+.logo {
+  float: left;
+  height: 100px;
+  width: 200px;
+  margin-left: 2%;
+  margin-top: 0.5%;
+}
+.imagenPerfil {
+  float: right;
+  height: 40px;
+  margin: 2% 3%;
+  width: 40px;
+  border-radius: 50%;
+  background-color: lightcyan;
+}
+.separador {
+  clear: both;
+  border-top: 3px solid #ccc;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar {
+  float: left;
+  width: 25%;
+  height: 100vh;
+  text-align: center;
+  border-right: 3px solid #ccc;
+}
+.sidebar h2 {
+  margin-left: 15%;
+  text-align: left;
+}
+.menu-item {
+  float: left;
+  clear: both;
+  margin-left: 15%;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  padding: 8px 30% 5px 10px;
+  text-align: left;
+  border-radius: 15px;
+}
+.menu-item:hover {
+  background-color: lightblue;
+}
+.menu-item img {
+  float: left;
+  height: 40px;
+  width: 40px;
+  margin: 0;
+}
+.menu-item h3 {
+  float: left;
+  margin: 0;
+  padding: 8px;
+  font-size: 16px;
+}
+
+.infoUsuarioDatos{
+    float: left;
+    overflow: hidden;
+}
+
+.infoUsuarioValoraciones{
+    float: right;
+    overflow: hidden;
+}
+
+.infoUsuario {
+  overflow: hidden;
+  float: left;
+  background-color: lightblue;
+  margin-left: 10%;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 18px;
+}
+.infoUsuario img {
+  float: left;
+  width: 80px;
+  height: 80px;
+}
+.infoTrabajos {
+  float: left;
+  max-width: 15%;
+  background-color: rgba(138, 202, 224, 0.212);
+  padding: 4%;
+  margin: 17px;
+  text-align: center;
+}
+
+footer {
+  clear: both;
+  text-align: center;
+  padding: 1%;
+  font-size: 12px;
+  background-color: rgb(173, 216, 230);
+  color: black;
+}

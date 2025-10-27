@@ -9,13 +9,13 @@
 
   <body>
     <header>
-        <img src="../../img/Registrarse.jpg" alt="Imagen Superior" />
+      <img src="../../img/Registrarse.png" alt="Imagen Superior" />
     </header>
     <div class="contenedor">
       <section class="datos">
         <form action="./index.html" class="contenedorInicio">
-          <p class="textInicioSesion">
-            Iniciar Sesión en <strong>TaskLink</strong>
+          <p class="textRegistrarse">
+            Empieza a usar <strong>TaskLink</strong>
           </p>
           <div class="contenedorEmail">
             <img src="../../svg/usuario.svg" class="iconoEmail" />
@@ -37,6 +37,18 @@
               name="contrasenya"
               class="inputContra"
               placeholder="Contraseña"
+              required
+            />
+          </div>
+          <div class="contenedorContrasenya">
+            <img src="../../svg/contrasenya.svg" class="iconoContrasnya" />
+
+            <input
+              type="password"
+              id="repetircontrasenya"
+              name="repetircontrasenya"
+              class="inputContra"
+              placeholder="Repite la Contraseña"
               required
             />
           </div>
@@ -66,15 +78,6 @@
           <div class="contenedorApple">
             <img src="../../svg/apple.svg" class="iconoContrasnya" />
             <input class="btnApple" type="submit" value="Continuar con Apple" />
-          </div>
-          <div class="contenedorRegistrarse">
-            <form action="./register.html">
-              <input
-                class="btnCrearCuenta"
-                type="submit"
-                value="Crear una Cuenta"
-              />
-            </form>
           </div>
         </div>
         <div class="logo">
