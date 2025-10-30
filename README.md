@@ -26,12 +26,11 @@ Por último un pequeño footer con información breve de la empresa y propietari
 /------- PAGINA LOGIN -------/
 
 La página del login está separada en 2 partes generales y despuees interna mente esta separada en 3.
-![alt text](image-1.png)
+
 La primera parte y la que mas llama la atención es el sidebar que se ha hecho mediante un float para poderlo mostrar,
 también se le han metido separaciones para que de la sesación de que está flotando la imagen. para ello se ha usado
 las siguientes clases (.sidebar, .sidebar img)
 
-![alt text](image.png)
 La segunda parte es la sección de datos donde aquí moto parte del formulario, la cual tiene que rellenar el usuario, esta aprte esta dividida en
 muchas subpartes.
 
@@ -47,16 +46,14 @@ el input de email, el imput de contraseña el boton de enviar y el texto de si s
 
     - La ultima parte es el footer que se ha puesto centrado para que quede toda la pagina simetrica y que no estuviera a un lado.
 
-
 /------- PAGINA Register -------/
 
 La página del register está separada en 2 partes generales y despues interna mente esta separada en 3.
-![alt text](image-2.png)
-La primera parte se ha quereido diferenciar un poco del login para que no sea tan monotono, se ha querido 
+
+La primera parte se ha quereido diferenciar un poco del login para que no sea tan monotono, se ha querido
 que el header se metiera por debajo del contenido para que diera la sensación que es más importante los datos que se tienene que rellenar
 a la imagen.
 
-![alt text](image-3.png)
 La segunda parte es la sección de datos donde aquí moto parte del formulario, la cual tiene que rellenar el usuario, esta aprte esta dividida en
 muchas subpartes.
 
