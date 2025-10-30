@@ -1,273 +1,275 @@
 body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    overflow: hidden;
-    font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
 }
 
 .contenedor {
-    display: grid;
-    grid-template-columns: 4fr 4fr;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-        "sidebar sidebar sidebar sidebar contenido "
+  display: grid;
+  grid-template-areas: "sidebar datos";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
 }
-
 
 .sidebar {
-    display: grid;
-    grid-area: "sidebar";
-    margin-top: 1%;
-    margin-left: 4%;
-    width: 36vw;
-    /*Lo que hace es que se ajusta a la parte visible de la pagina*/
-    border-radius: 10%;
-    box-shadow: 10px 0px 5px lightgrey;
-
+  grid-area: sidebar;
+  margin-top: 1%;
+  margin-left: 4%;
+  width: 95%;
+  height: 95vh; /*Lo que hace es que se ajusta a la parte visible de la pagina*/
+  border-radius: 10%;
+  box-shadow: 10px 0px 5px lightgrey;
 }
-
 .sidebar img {
-    width: 100%;
-    height: 100%;
-    border-radius: 10%;
+  width: 100%;
+  height: 100%;
+  border-radius: 10%;
 }
 
 .datos {
-    display: grid;
-    grid-area: "contenido";
-    width: 60%;
-    margin-top: 8%;
-    margin-bottom: 20px;
+  grid-area: datos;
+  display: grid;
+  grid-template-areas:
+    "textInfo"
+    "correo"
+    "contra"
+    "btnEntrar"
+    "olvidado"
+    "separador"
+    "btnGoogle"
+    "btnApple"
+    "btnCrear"
+    "logo"
+    "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(1fr);
+  width: 100%;
+  margin-top: 8%;
 }
 
 .textInicioSesion {
-    font-size: 18px;
-    color: #1976d2
+  grid-area: textInfo;
+  font-size: 18px;
+  color: #1976d2;
 }
 
 .contenedorInicio {
-    padding-left: 25%;
-    padding-right: 25%;
+  padding-left: 25%;
+  padding-right: 25%;
 }
 
 .contenedorEmail {
-    overflow: hidden;
-    border: 2px solid lightgrey;
-    border-radius: 25px;
-    padding: 2px;
-    margin-bottom: 15px;
-
+  grid-area: correo;
+  overflow: hidden;
+  border: 2px solid lightgrey;
+  border-radius: 25px;
+  padding: 2px;
+  margin-bottom: 15px;
 }
-
 .inputMail::placeholder {
-    color: #2196f3;
+  color: #2196f3;
 }
-
 
 .inputMail {
-    width: 85%;
-    float: left;
-    padding: 8px;
-    font-size: 14px;
-    border: none;
-    outline: none;
+  width: 85%;
+  padding: 8px;
+  font-size: 14px;
+  border: none;
 }
-
 .inputMail::placeholder {
-    color: #2196f3;
+  color: #2196f3;
 }
-
 .iconoEmail {
-    float: left;
-    width: 16px;
-    height: 16px;
-    margin: 8px 8px 0 12px;
+  width: 16px;
+  height: 16px;
+  margin: 8px 8px 0 12px;
 }
-
 .contenedorContrasenya {
-    overflow: hidden;
-    border: 2px solid lightgrey;
-    border-radius: 25px;
-    padding: 2px;
+  grid-area: contra;
+  overflow: hidden;
+  border: 2px solid lightgrey;
+  border-radius: 25px;
+  padding: 2px;
 }
-
 .inputContra {
-    width: 85%;
-    float: left;
-    padding: 8px;
-    font-size: 14px;
-    border: none;
-    outline: none;
+  width: 85%;
+  padding: 8px;
+  font-size: 14px;
+  border: none;
+  outline: none;
 }
 
 .inputContra::placeholder {
-    color: #2196f3;
+  color: #2196f3;
 }
 
 .iconoContrasnya {
-    padding-left: 12px;
-    width: 16px;
-    height: 16px;
-    float: left;
-    margin: 8px 8px 0 0;
+  padding-left: 12px;
+  width: 16px;
+  height: 16px;
+  margin: 8px 8px 0 0;
 }
 
 .btnEntrar {
-    width: 75%;
-    background-color: #2196f3;
-    color: white;
-    border: none;
-    margin-top: 22px;
-    margin-left: 12%;
-    padding: 12px;
-    border-radius: 25px;
-    font-size: 16px;
+  grid-area: btnEntrar;
+  width: 75%;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  margin-top: 22px;
+  margin-left: 12%;
+  padding: 12px;
+  border-radius: 25px;
+  font-size: 16px;
 }
 
 .btnEntrar:hover {
-    background-color: #1976d2;
+  background-color: #1976d2;
 }
 
 .lineaSeparacion {
-    margin-top: 5%;
-    text-decoration: none;
+  margin-top: 5%;
+  text-decoration: none;
 }
 
 .lineaPrincipio {
-    margin-left: 23%;
-    width: 25%;
-    float: left;
-    margin-right: 10px;
-    border-top: 1px solid #ccc;
+  margin-left: 23%;
+  width: 25%;
+  float: left;
+  margin-right: 10px;
+  border-top: 1px solid #ccc;
 }
-
 .lineaFinal {
-    margin-right: 24%;
-    width: 25%;
-    float: right;
-    border-top: 1px solid #ccc;
+  margin-right: 24%;
+  width: 25%;
+  float: right;
+  border-top: 1px solid #ccc;
 }
 
 .btnInicios {
-    margin-top: 2%;
-    padding-left: 25%;
-    padding-right: 25%;
+  margin-top: 2%;
+  padding-left: 25%;
+  padding-right: 25%;
 }
 
 .contenedorGoogle {
-    overflow: hidden;
-    border: 2px solid lightgrey;
-    border-radius: 25px;
-    padding: 4px 0 4px 0;
-    padding-left: 30%;
-    margin-bottom: 3%;
+  display: grid;
+  grid-area: btnGoogle;
+  grid-template-areas: "imgGoogle textoGoogle";
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+  border: 2px solid lightgrey;
+  border-radius: 25px;
+  padding: 4px 0 4px 0;
+  margin-bottom: 3%;
 }
-
-.btnGoogle {
-    float: left;
-    width: 40%;
-    padding: 7px 0 7px 0;
-    font-size: 14px;
-    border: none;
-    background-color: white;
-    color: #2196f3;
-}
-
 .iconoGoogle {
-    padding-left: 12px;
-    width: 16px;
-    height: 16px;
-    float: left;
-    margin: 8px 8px 0 0;
+  grid-area: imgGoogle;
+  padding-left: 12px;
+  width: 100%;
+  height: 17px;
+  padding-left: 40%;
+  margin: 8px 0 0 0;
+}
+.btnGoogle {
+  grid-area: textoGoogle;
+  width: 60%;
+  padding: 7px 0 7px 0;
+  font-size: 14px;
+  border: none;
+  background-color: white;
+  color: #2196f3;
 }
 
 .contenedorApple {
-    overflow: hidden;
-    border: 2px solid lightgrey;
-    border-radius: 25px;
-    padding: 4px 0 4px 0;
-    padding-left: 30%;
+  display: grid;
+  grid-area: btnApple;
+  grid-template-areas: "imgApple textoApple";
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+  border: 2px solid lightgrey;
+  border-radius: 25px;
+  padding: 4px 0 4px 0;
+  margin-block-start: 3%;
 }
-
+.iconoApple {
+  grid-area: imgApple;
+  padding-left: 12px;
+  width: 100%;
+  height: 17px;
+  padding-left: 40%;
+  margin: 8px 0 0 0;
+}
 .btnApple {
-    float: left;
-    width: 40%;
-    padding: 7px 0 7px 0;
-    font-size: 14px;
-    border: none;
-    background-color: transparent;
-    color: #2196f3;
+  grid-area: textoApple;
+  width: 50%;
+  padding: 7px 0 7px 0;
+  font-size: 14px;
+  border: none;
+  background-color: white;
+  color: #2196f3;
 }
 
 .contenedorRegistrarse {
-    overflow: hidden;
-    border: 2px solid #2196f3;
-    border-radius: 25px;
-    margin-top: 3%;
-    padding: 4px 0 4px 0;
-    padding-left: 30%;
+  border: 2px solid #2196f3;
+  border-radius: 25px;
+  margin-top: 3%;
+  padding: 4px 0 4px 0;
+  padding-left: 30%;
 }
-
 .btnCrearCuenta {
-    float: left;
-    width: 60%;
-    padding: 7px 0 7px 0;
-    font-size: 14px;
-    border: none;
-    background-color: white;
-    font-size: 14px;
-    color: #2196f3;
+  grid-area: btnCrear;
+  width: 60%;
+  padding: 7px 0 7px 0;
+  font-size: 14px;
+  border: none;
+  background-color: white;
+  font-size: 14px;
+  color: #2196f3;
 }
 
 .contenedorOlvidarContra {
-    width: 100%;
-    text-align: center;
-    margin-top: 12px;
+  grid-area: olvidado;
+  width: 100%;
+  text-align: center;
+  margin-top: 12px;
 }
-
 .contenedorOlvidarContra strong {
-    color: #2196f3;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
+  color: #2196f3;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
 }
-
 .contenedorOlvidarContra strong:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .logo {
-    float: left;
-    width: 100%;
-    margin-left: 10%;
-    padding-top: 10px;
-    clear: both;
+  grid-area: logo;
+  width: 100%;
 }
-
 .logo img {
-    width: 200px;
-    height: 100px;
-    margin-left: 30%;
-    max-width: 80%;
+  width: 200px;
+  height: 100px;
+  max-width: 80%;
+  margin-left: 40%;
 }
-
 .logo p {
-    font-size: 14px;
-    color: #666;
-    margin-left: 17%;
-    max-width: 80%;
+  font-size: 14px;
+  color: #666;
+  text-align: center;
 }
-
 .logo a {
-    color: #2196f3;
-    font-weight: bold;
-    text-decoration: none;
+  color: #2196f3;
+  font-weight: bold;
+  text-decoration: none;
 }
-
 footer {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 12px;
-    color: #888;
+  grid-area: footer;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 12px;
+  color: #888;
 }
