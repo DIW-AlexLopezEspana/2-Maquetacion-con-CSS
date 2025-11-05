@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio Sesión TaskLink</title>
+    <link rel="stylesheet" href="../CSSGRID/login.css" type="text/css" />
+  </head>
+
+  <body>
+    <div class="contenedor">
+      <aside class="sidebar">
+        <img src="../../img/InicioSesion.png" alt="Imagen Lateral" />
+      </aside>
+      <section class="datos">
+        <form action="../HTML/index.html" class="contenedorInicio">
+          <p class="textInicioSesion">Iniciar Sesión en <strong>TaskLink</strong></p>
+          <div class="contenedorEmail">
+            <img src="../../svg/usuario.svg" class="iconoEmail" />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="inputMail"
+              placeholder="Correo Electrónico"
+              required
+            />
+          </div>
+          <div class="contenedorContrasenya">
+            <img src="../../svg/contrasenya.svg" class="iconoContrasnya" />
+
+            <input
+              type="password"
+              id="contrasenya"
+              name="contrasenya"
+              class="inputContra"
+              placeholder="Contraseña"
+              required
+            />
+          </div>
+
+          <input type="submit" value="Entrar" class="btnEntrar" />
+
+          <div class="contenedorOlvidarContra">
+            <strong><a href=""></a> ¿Has olvidado la contraseña?</strong>
+          </div>
+        </form>
+
+        <div class="lineaSeparacion">
+          <hr class="lineaPrincipio" />
+          O
+          <hr class="lineaFinal" />
+        </div>
+
+        <div class="btnInicios">
+          <div class="contenedorGoogle">
+            <img src="../../svg/google.svg" class="iconoGoogle" />
+            <input
+              class="btnGoogle"
+              type="submit"
+              value="Continuar con Google"
+            />
+          </div>
+          <div class="contenedorApple">
+            <img src="../../svg/apple.svg" class="iconoApple" />
+            <input class="btnApple" type="submit" value="Continuar con Apple" />
+          </div>
+          <div class="contenedorRegistrarse">
+            <form action="../HTMLGRID/register.html">
+            <input class="btnCrearCuenta" type="submit" value="Crear una Cuenta" />
+            </form>
+          </div>
+        </div>
+        <div class="logo">
+          <img src="../../img/logo.png" alt="logo TaskLink" />
+          <p>También puede <a href="">denunciar ofertas que no son apropiadas</a> en tu pais sin iniciar sesión</p>
+        </div>
+        <footer>Español (España) © 2025 TaskLink from Alex&Gabi</footer>
+      </section>
+    </div>
+  </body>
+</html>
