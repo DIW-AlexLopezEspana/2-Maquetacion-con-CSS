@@ -1,254 +1,449 @@
 body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 /* HEADER */
 header {
-    background-color: white;
-    border-bottom-left-radius: 90px;
-    border-bottom-right-radius: 90px;
-    padding: 0px 20px;
-    overflow: hidden;
-    height: 80px;
+  background-color: white;
+  border-bottom-left-radius: 90px;
+  border-bottom-right-radius: 90px;
+  padding: 0px 20px;
+  overflow: hidden;
+  height: 80px;
 }
 
 .logo-container {
-    float: left;
-    height: 100%;
+  float: left;
+  height: 100%;
 }
 
 .logo-container .logo-icon {
-    width: 150px;
-    height: 75px;
-    margin-right: 8px;
-    border-radius: 5px;
-    vertical-align: middle;
-    display: inline-block;
+  width: 150px;
+  height: 75px;
+  margin-right: 8px;
+  border-radius: 5px;
+  vertical-align: middle;
+  display: inline-block;
+}
+.logo-icon:hover {
+  animation: 1s vibrar infinite;
 }
 
 .right-header {
-    float: right;
-    height: 100%;
+  float: right;
+  height: 100%;
 }
 
 .texto-servicios {
-    color: #333;
-    font-weight: bold;
-    font-size: 14px;
-    margin-right: 20px;
-    cursor: pointer;
-    display: inline-block;
-    vertical-align: middle;
-    line-height: 80px;
+  color: #333;
+  font-weight: bold;
+  font-size: 14px;
+  margin-right: 20px;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 80px;
 }
 
 .icono-perfil {
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
 }
 
 .icono-perfil .profile-icon {
-    width: 35px;
-    height: 35px;
-    border-radius: 70%;
-    line-height: 80px;
+  width: 35px;
+  height: 35px;
+  border-radius: 70%;
+  line-height: 80px;
 }
 
 /* SECTION 1 */
 
 .hero {
-    position: relative;
-    padding: 40px 20px;
-    text-align: center;
-    min-height: 20vh;
-    background-color: #c5d9f885;
-    overflow: hidden;
-    text-align: center;
+  position: relative;
+  padding: 40px 20px;
+  text-align: center;
+  min-height: 20vh;
+  background-color: #c5d9f885;
+  overflow: hidden;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: heroScroll 1.5s linear both;
 }
 
 .hero-video {
-    top: 0.5;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  top: 0.5;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
-.hero-video-izquierda {
-    width: 45%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-    float: right;
+.hero-video {
+  width: 45%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  float: right;
 }
-
 
 .hero-content {
-    position: relative;
-    color: black;
-    padding-top:3% ;
+  position: relative;
+  color: black;
+  padding-top: 3%;
 }
-.hero-content p{
-    font-size: 18px;
-    color: rgba(17, 17, 17, 0.548);
+.hero-content p {
+  font-size: 18px;
+  color: rgba(17, 17, 17, 0.548);
 }
 
 .hero h2 {
-    font-size: 35px;
-    font-weight: bold;
-    color: white;
-    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  font-size: 35px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
 }
 
 .search-container {
-    text-align: center;
-
+  text-align: center;
 }
 
 .search-bar {
-    background-color: #f0f0f0;
-    padding: 5px;
-    border-radius: 20px;
-    width: 30%;
-    margin: 0 auto;
-    overflow: hidden;
+  background-color: #f0f0f0;
+  padding: 5px;
+  border-radius: 20px;
+  width: 30%;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
 .search-bar input {
-    float: left;
-    border: none;
-    outline: none;
-    padding: 8px 12px;
-    width:80%;
-    border-radius: 20px 0 0 20px;
-    font-size: 14px;
-    box-sizing: border-box;
+  float: left;
+  border: none;
+  outline: none;
+  padding: 8px 12px;
+  width: 80%;
+  border-radius: 20px 0 0 20px;
+  font-size: 14px;
+  box-sizing: border-box;
 }
 
 .search-bar button {
-    float: right;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    padding: 8px 15px;
-    width: 20%;
-    border-radius: 0 20px 20px 0;
-    cursor: pointer;
-    font-weight: bold;
-    box-sizing: border-box;
+  float: right;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  width: 20%;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+  font-weight: bold;
+  box-sizing: border-box;
 }
 
 .search-bar button:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
 
-.search-container-btn button{
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 16px;
+.search-container-btn button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 16px;
 }
 
 /* SECTION 2 */
 
 .container {
-    background-color: white;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    padding: 20px;
-    overflow: hidden;
-    width: 97.8%;
-    text-align: center;
-    margin-top: -2%;
+  background-color: white;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 20px;
+  overflow: hidden;
+  width: 97.8%;
+  text-align: center;
+  margin-top: -2%;
 }
 
 .courses {
-    float: left;
-    width: 100%;
-    padding: 20px;
-    overflow: hidden;
-    text-align: center;
+  float: left;
+  width: 100%;
+  padding: 20px;
+  overflow: hidden;
+  text-align: center;
 }
 
 .course {
-    width: 350px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 15px;
-    margin: 15px;
-    display: inline-block;
-    background-color: white;
-    text-align: center;
-    position: relative;
+  width: 350px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 15px;
+  display: inline-block;
+  background-color: white;
+  text-align: center;
+  position: relative;
 }
 
 .course img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    margin-bottom: 10px;
-    border-radius: 8px 8px 0 0;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 8px 8px 0 0;
 }
 
 .course h3 {
-    font-size: 18px;
-    font-weight: bold;
-    color: #333;
-    margin: 10px 0 5px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin: 10px 0 5px;
 }
 
 .course p {
-    font-size: 14px;
-    color: #666;
-    line-height: 1.4;
-    margin: 0 0 10px;
-    text-align: left;
+  font-size: 14px;
+  color: #666;
+  line-height: 1.4;
+  margin: 0 0 10px;
+  text-align: left;
 }
 
 .course-footer {
-    overflow: hidden;
-    position: relative;
-    padding-top: 10px;
-    border-top: 10px solid #C5D9F8;
+  overflow: hidden;
+  position: relative;
+  padding-top: 10px;
+  border-top: 10px solid #c5d9f8;
 }
 
 .course-footer .price {
-    float: left;
-    font-weight: bold;
-    color: #333;
-    font-size: 14px;
-    line-height: 24px;
+  float: left;
+  font-weight: bold;
+  color: #333;
+  font-size: 14px;
+  line-height: 24px;
 }
 
-.course-footer button {
-    float: right;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 16px;
+.course-trasera button {
+  float: right;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
 }
 
-.course-footer button:hover {
-    background-color: #0056b3;
+.course-trasera:hover {
+  background-color: #0056b3;
+}
+/* Inicio Repasar para ver que se ha hecho*/
+.course-completo {
+  width: 350px; /* igual que los demás cursos  Se pone una altura y anchura fija tanto para el frontal como para la parte trasera. */
+  height: 370px;
+  perspective: 1000px; /*Se le pone para que al giro se le añada profundidad de 3D*/
+  display: inline-block;
+  margin: 15px;
+  position: relative; /*Tanto parte delantera como trasera se posiciona de forma absoluta dentro*/
+  vertical-align: top;
+}
+
+/* CARAS DEL FLIP */
+.course-completo .course,
+.course-completo .course-trasera {
+  width: 100%;
+  height: 100%; /* misma altura para ambas caras */
+  border-radius: 8px;
+  backface-visibility: hidden; /*Cuando gira se oculta la cara de atras*/
+  transition: transform 0.8s; /*Hace un giro de 0.8 segundos*/
+  position: absolute; /* se superponen */
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  overflow: hidden; /* contenido que se pase queda oculto */
+}
+
+/* FRONTAL */
+.course-completo .course {
+  z-index: 2; /*Se mantiene por encima de la cara trasera*/
+  transform: rotateY(0deg);
+}
+
+/* TRASERA */
+.course-completo .course-trasera {
+  z-index: 1; /*Se mantiene por debajo de la cara delantera*/
+  transform: rotateY(180deg);
+  background-color: #1a4c6e;
+  color: white;
+  text-align: left;
+}
+
+/* EFECTO HOVER */
+.course-completo:hover .course {
+  transform: rotateY(
+    180deg
+  ); /*Al realizar el giro la parte delantera queda oculta*/
+}
+
+.course-completo:hover .course-trasera {
+  transform: rotateY(
+    0deg
+  ); /*Al realizar el giro la parte trasera queda visible*/
+}
+
+/* IMAGEN */
+.course-completo .course img,
+.course-completo .course-trasera img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+  margin-bottom: 10px;
+}
+
+/* TITULOS Y PARRAFOS */
+.course-completo .course h3,
+.course-completo .course-trasera h4 {
+  margin: 10px 0;
+}
+
+.course-completo .course p,
+.course-completo .course-trasera p {
+  font-size: 14px;
+  line-height: 1.4;
+  margin-bottom: 10px;
+  overflow-wrap: break-word; /*Lo utilizamos para evitar que se rompa el diseño con las palabras largas*/
+}
+
+/* PIE DE CURSO FRONTAL */
+.course-completo .course-footer {
+  border-top: 10px solid #c5d9f8;
+  padding-top: 10px;
+  overflow: hidden; /* evita que se salga el precio o botón */
+}
+
+/* PRECIO */
+.course-completo .course-footer .price {
+  float: left;
+  font-weight: bold;
+  color: #333;
+  font-size: 14px;
+}
+
+/* BOTON */
+.course-completo .course-footer button {
+  float: right;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.course-completo .course-footer button:hover {
+  background-color: #0056b3;
+}
+
+/* BOTON TRASERO */
+.course-completo .course-trasera button {
+  margin-top: 10px;
+  float: right;
+}
+
+/*Fin Repasar para ver que se ha hecho*/
+.mapa-container {
+  width: 95%;
+  height: 35%;
+  overflow: hidden;
+  border-radius: 16px;
+}
+.mapa-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.proximamente {
+  float: right;
+  width: 30%;
+  height: 15%;
+  margin-right: 35%;
+  border-radius: 8px;
+  background-color: #1a4c6e;
+  text-align: center;
+  color: white;
+  font-size: 26px;
+  font-weight: bold;
+  overflow: hidden;
+}
+
+.proximamente p {
+  animation: pulse 1.6s infinite;
 }
 
 /* FOOTER */
 footer {
-    background-color: #C5D9F8;
-    text-align: center;
-    padding: 15px;
-    clear: both;
-    margin-top: 20px;
+  background-color: #c5d9f8;
+  text-align: center;
+  padding: 15px;
+  clear: both;
+  margin-top: 20px;
+}
+
+@keyframes heroScroll {
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+}
+@keyframes vibrar {
+  5%,
+  25%,
+  45%,
+  65%,
+  85% {
+    transform: translateX(-5px);
+  }
+  15%,
+  35%,
+  55%,
+  75%,
+  95% {
+    transform: translateX(5px);
+  }
+}
+@keyframes pulse {
+  0% {
+    opacity: 0.4;
+    transform: scale(0.97);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0.4;
+    transform: scale(0.97);
+  }
 }
