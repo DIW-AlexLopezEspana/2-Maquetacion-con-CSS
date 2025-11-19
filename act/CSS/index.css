@@ -247,7 +247,7 @@ header {
 .course-trasera:hover {
   background-color: #0056b3;
 }
-/* Inicio Repasar para ver que se ha hecho*/
+
 .course-completo {
   width: 350px; /* igual que los demás cursos  Se pone una altura y anchura fija tanto para el frontal como para la parte trasera. */
   height: 370px;
@@ -258,7 +258,6 @@ header {
   vertical-align: top;
 }
 
-/* CARAS DEL FLIP */
 .course-completo .course,
 .course-completo .course-trasera {
   width: 100%;
@@ -276,13 +275,11 @@ header {
   overflow: hidden; /* contenido que se pase queda oculto */
 }
 
-/* FRONTAL */
 .course-completo .course {
   z-index: 2; /*Se mantiene por encima de la cara trasera*/
   transform: rotateY(0deg);
 }
 
-/* TRASERA */
 .course-completo .course-trasera {
   z-index: 1; /*Se mantiene por debajo de la cara delantera*/
   transform: rotateY(180deg);
@@ -291,7 +288,6 @@ header {
   text-align: left;
 }
 
-/* EFECTO HOVER */
 .course-completo:hover .course {
   transform: rotateY(
     180deg
@@ -304,7 +300,6 @@ header {
   ); /*Al realizar el giro la parte trasera queda visible*/
 }
 
-/* IMAGEN */
 .course-completo .course img,
 .course-completo .course-trasera img {
   width: 100%;
@@ -314,7 +309,6 @@ header {
   margin-bottom: 10px;
 }
 
-/* TITULOS Y PARRAFOS */
 .course-completo .course h3,
 .course-completo .course-trasera h4 {
   margin: 10px 0;
@@ -367,7 +361,6 @@ header {
   float: right;
 }
 
-/*Fin Repasar para ver que se ha hecho*/
 .mapa-container {
   width: 95%;
   height: 35%;
