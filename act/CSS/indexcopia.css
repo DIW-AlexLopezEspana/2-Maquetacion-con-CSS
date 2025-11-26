@@ -1,0 +1,231 @@
+@charset "UTF-8";
+.course {
+  width: 350px;
+}
+
+.btnSearch-bar {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.btnSearch-bar:hover {
+  background-color: #0056b3;
+}
+.btnSearch-bar {
+  float: right;
+  width: 20%;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #0056b3;
+}
+button {
+  border-radius: 8px;
+  float: left;
+}
+
+.profile-icon {
+  width: 35px;
+  height: 35px;
+}
+
+img {
+  width: 100%;
+  height: 180px;
+}
+
+.hero-video {
+  object-fit: cover;
+  float: right;
+}
+
+.course-completo {
+  width: 350px;
+  height: 370px;
+  display: inline-block;
+  margin: 15px;
+  position: relative;
+  vertical-align: top;
+  perspective: 1000px;
+}
+.course-completo .front, .course-completo .back {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  backface-visibility: hidden;
+  transition: transform 0.8s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  overflow: hidden;
+}
+.course-completo .front {
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+.course-completo .back {
+  z-index: 1;
+  transform: rotateY(180deg);
+}
+.course-completo:hover .front {
+  transform: rotateY(180deg);
+}
+.course-completo:hover .back {
+  transform: rotateY(0deg);
+}
+.course-completo.category-diseñador .back {
+  background-color: #6a5acd;
+  color: white;
+  text-align: left;
+}
+.course-completo.category-diseñador .back h4 {
+  font-weight: bold;
+  text-decoration: underline;
+  letter-spacing: 1px;
+}
+.course-completo.category-limpieza .back {
+  background-color: #2e8b57;
+  color: white;
+  text-align: left;
+}
+.course-completo.category-peluquero .back {
+  background-color: #ff69b4;
+  color: white;
+  text-align: left;
+}
+.course-completo.category-profesor .back {
+  background-color: #ffa500;
+  color: white;
+  text-align: left;
+}
+.course-completo.category-profesor .back h4 {
+  font-style: italic;
+  color: #fff;
+}
+.course-completo.category-mecanico .back {
+  background-color: #4682b4;
+  color: white;
+  text-align: left;
+}
+.course-completo.category-mecanico .back h4 {
+  color: yellow;
+  text-shadow: 0 0 3px black;
+  font-size: 1.1em;
+}
+.course-completo.category-default .back {
+  background-color: #1a4c6e;
+  color: white;
+  text-align: left;
+}
+.course-completo .front img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+  margin-bottom: 10px;
+}
+.course-completo .front h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin: 10px 0 5px;
+}
+.course-completo .front p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.4;
+  margin: 0 0 10px;
+  text-align: left;
+}
+.course-completo .front .course-footer {
+  border-top: 10px solid #c5d9f8;
+  padding-top: 10px;
+  overflow: hidden;
+}
+.course-completo .front .course-footer .price {
+  float: left;
+  font-weight: bold;
+  color: #333;
+  font-size: 14px;
+}
+.course-completo .front .course-footer button {
+  float: right;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+}
+.course-completo .front .course-footer button:hover {
+  background-color: rgb(0, 86.1, 178.5);
+}
+.course-completo .back h4 {
+  margin: 10px 0;
+}
+.course-completo .back p {
+  font-size: 14px;
+  line-height: 1.4;
+  margin-bottom: 10px;
+  overflow-wrap: break-word;
+}
+.course-completo .back .mapa-container {
+  width: 95%;
+  height: 35%;
+  overflow: hidden;
+  border-radius: 16px;
+}
+.course-completo .back .mapa-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.course-completo .back button {
+  margin-top: 10px;
+  float: right;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 12px;
+}
+.course-completo .back button:hover {
+  background-color: rgb(0, 86.1, 178.5);
+}
+
+.logo-container {
+  float: left;
+  height: 100%;
+}
+
+.logo-icon {
+  width: 150px;
+  height: 75px;
+  margin-right: 8px;
+  border-radius: 8px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+/*# sourceMappingURL=indexcopia.css.map */

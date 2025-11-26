@@ -1,0 +1,165 @@
+@use "dimensiones" as *;
+@use "colores" as *;
+
+// ===== MIXIN PARA EFECTO FLIP =====
+@mixin flip-card($duration: 0.8s) {
+  perspective: 1000px;
+  .front, .back {
+    width: 100%;
+    height: 100%;
+    border-radius: $border-radius;
+    backface-visibility: hidden;
+    transition: transform $duration;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: $color-background-page;
+    overflow: hidden;
+  }
+  .front {
+    z-index: 2;
+    transform: rotateY(0deg);
+  }
+  .back {
+    z-index: 1;
+    transform: rotateY(180deg);
+  }
+  &:hover {
+    .front { transform: rotateY(180deg); }
+    .back { transform: rotateY(0deg); }
+  }
+}
+
+// ===== ESTILOS PRINCIPALES PARA TARJETAS =====
+.course-completo {
+  width: $card-width;
+  height: $card-height;
+  display: inline-block;
+  margin: 15px;
+  position: relative;
+  vertical-align: top;
+
+  @include flip-card();
+
+  // 🔁 BUCLE: Aplicar estilos según categoría
+  @each $categoria, $color in $categories {
+    &.category-#{$categoria} {
+      .back {
+        background-color: $color;
+        color: white;
+        text-align: left;
+
+        // 🧠 CONDICIONAL EXPLÍCITO DENTRO DEL BUCLE
+        @if $categoria == "diseñador" {
+          h4 {
+            font-weight: bold;
+            text-decoration: underline;
+            letter-spacing: 1px;
+          }
+        } @else if $categoria == "mecanico" {
+          h4 {
+            color: yellow;
+            text-shadow: 0 0 3px black;
+            font-size: 1.1em;
+          }
+        } @else if $categoria == "profesor" {
+          h4 {
+            font-style: italic;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  // 🎨 ESTILOS COMUNES ANIDADOS
+  .front {
+    img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: $border-radius $border-radius 0 0;
+      margin-bottom: 10px;
+    }
+    h3 {
+      font-size: 18px;
+      font-weight: bold;
+      color: $text-color;
+      margin: 10px 0 5px;
+    }
+    p {
+      font-size: 14px;
+      color: #666;
+      line-height: 1.4;
+      margin: 0 0 10px;
+      text-align: left;
+    }
+    .course-footer {
+      border-top: $price-border-thickness solid $color-footer;
+      padding-top: 10px;
+      overflow: hidden;
+      .price {
+        float: left;
+        font-weight: bold;
+        color: $text-color;
+        font-size: 14px;
+      }
+      button {
+        float: right;
+        background-color: $color-btn;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 16px;
+        &:hover {
+          background-color: darken($color-btn, 15%);
+        }
+      }
+    }
+  }
+
+  .back {
+    h4 {
+      margin: 10px 0;
+    }
+    p {
+      font-size: 14px;
+      line-height: 1.4;
+      margin-bottom: 10px;
+      overflow-wrap: break-word;
+    }
+    .mapa-container {
+      width: 95%;
+      height: $map-height;
+      overflow: hidden;
+      border-radius: $map-radius;
+      iframe {
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+    }
+    button {
+      margin-top: 10px;
+      float: right;
+      background-color: $color-btn;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 12px;
+      &:hover {
+        background-color: darken($color-btn, 15%);
+      }
+    }
+  }
+}

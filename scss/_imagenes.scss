@@ -1,0 +1,15 @@
+@use "dimensiones" as *;
+@use "mixins" as *;
+
+.profile-icon{
+@include img-tamanyo("perfil-pequenyo");
+}
+
+img{
+    @include img-tamanyo("defecto");
+}
+
+.hero-video{
+    object-fit: cover;
+    float: $derecha;
+}

@@ -1,0 +1,42 @@
+@use "colores" as *;
+
+.course {
+  width: 350px;
+}
+
+
+$border-radius: 8px;
+$border-style: "solid";
+$border-width: 1px;
+$without-border: none;
+$izquierda:left;
+$derecha:right;
+$width100:100%;
+$height100:100%;
+
+//Dimensiones botones
+$btn-padding-topybottom:5px;
+$btn-padding-rightyleft:10px;
+$btn-width20:20%;
+
+
+//DIMENSIONES TARJETAS
+$card-width: 350px;
+$card-height: 370px;
+$flip-duration: 0.8s;
+$map-height: 35%;
+$map-radius: 16px;
+$price-border-thickness: 10px;
+
+//Dimensiones imagenes
+
+$img-width: 100%;
+$img-height: 180px;
+
+$img-pequenya-width: 150px;
+$img-pequenya-height: 75px;
+
+$icon-mid-width: 35px;
+$icon-mid-height: 35px;
+
+

@@ -1,0 +1,16 @@
+$color-background-page: white;
+$color-background-trasera:#1a4c6e;
+$color-btn:#007bff;
+$color-btn-hover:#0056b3;
+$color-footer:#c5d9f8;
+$text-color: #333;
+
+// Paleta de colores por categoría
+$categories: (
+  diseñador: #6a5acd,
+  limpieza: #2e8b57,
+  peluquero: #ff69b4,
+  profesor: #ffa500,
+  mecanico: #4682b4,
+  default: $color-background-trasera
+);

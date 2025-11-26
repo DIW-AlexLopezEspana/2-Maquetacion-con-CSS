@@ -1,0 +1,16 @@
+@use "dimensiones" as *;
+@use "imagenes" as *;
+@use "mixins" as *;
+
+.logo-container{
+    float: $izquierda;
+    height: $height100;
+}
+
+.logo-icon{
+    @include img-tamanyo("logo");
+    margin-right: 8px;
+    border-radius: $border-radius;
+    vertical-align: middle;
+    display: inline-block;
+}
