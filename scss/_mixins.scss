@@ -48,3 +48,41 @@
     animation: heroScroll 1.5s $linear $ambos;
   }
 }
+
+
+
+@mixin flip-card($duration: 0.8s) {
+  perspective: 1000px;
+  .front,
+  .back {
+    width: $widthmaximo;
+    height: $heightmaximo;
+    border-radius: $border-radius;
+    backface-visibility: $oculto;
+    transition: transform $duration;
+    position: $posicionAbsoluta;
+    top: $sinDimensiones;
+    left: $sinDimensiones;
+    box-sizing: $tamanyo-caja;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: $color-background-page;
+    overflow: $oculto;
+  }
+  .front {
+    z-index: 2;
+    transform: rotateY(0deg);
+  }
+  .back {
+    z-index: 1;
+    transform: rotateY(180deg);
+  }
+  &:hover {
+    .front {
+      transform: rotateY(180deg);
+    }
+    .back {
+      transform: rotateY(0deg);
+    }
+  }
+}

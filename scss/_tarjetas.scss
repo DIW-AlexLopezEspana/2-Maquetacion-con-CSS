@@ -1,42 +1,9 @@
 @use "dimensiones" as *;
 @use "colores" as *;
+@use "mixins" as *;
 
 // ===== MIXIN PARA EFECTO FLIP =====
-@mixin flip-card($duration: 0.8s) {
-  perspective: 1000px;
-  .front,
-  .back {
-    width: 100%;
-    height: 100%;
-    border-radius: $border-radius;
-    backface-visibility: hidden;
-    transition: transform $duration;
-    position: absolute;
-    top: 0;
-    left: 0;
-    box-sizing: border-box;
-    padding: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: $color-background-page;
-    overflow: hidden;
-  }
-  .front {
-    z-index: 2;
-    transform: rotateY(0deg);
-  }
-  .back {
-    z-index: 1;
-    transform: rotateY(180deg);
-  }
-  &:hover {
-    .front {
-      transform: rotateY(180deg);
-    }
-    .back {
-      transform: rotateY(0deg);
-    }
-  }
-}
+
 
 // ===== ESTILOS PRINCIPALES PARA TARJETAS =====
 .course-completo {
