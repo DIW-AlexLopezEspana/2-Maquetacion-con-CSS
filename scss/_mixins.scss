@@ -1,13 +1,16 @@
 @use "dimensiones" as *;
 @use "colores" as *;
+@use "keyframes" as *;
+@use "animaciones" as *;
+@use "caracteristicas" as *;
+
 
 @mixin btn-disenyos($class) {
-
   background-color: $color-btn;
   color: $color-background-page;
   border: $without-border;
   padding: $btn-padding-topybottom $btn-padding-rightyleft;
-  cursor: pointer;
+  cursor: $puntero;
 
   &:hover {
     background-color: $color-btn-hover;
@@ -16,11 +19,11 @@
   @if $class == "btnSearch-bar" {
     float: $derecha;
     width: $btn-width20;
-    font-weight: bold;
-    box-sizing: border-box;
+    font-weight: $texto-Oscuro;
+    box-sizing: $tamanyo-caja;
   } @else {
     border-radius: $border-radius;
-      float: $izquierda;
+    float: $izquierda;
   }
 }
 
@@ -36,8 +39,11 @@
     height: $img-height;
   }
 }
-@mixin div-disenyos($class){
-    @if $class == ""{
 
-    }
+@mixin efectos($class) {
+  @if $class == "hero" {
+    opacity: $sinOpacidad;
+    transform: $translateYvalorAmplio;
+    animation: heroScroll 1.5s $linear $ambos;
+  }
 }

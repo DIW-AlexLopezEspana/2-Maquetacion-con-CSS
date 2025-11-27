@@ -1,4 +1,4 @@
-@use "dimensiones" as *;
+@use "caracteristicas" as *;
 @use "mixins" as *;
 
 .profile-icon{
@@ -10,6 +10,6 @@ img{
 }
 
 .hero-video{
-    object-fit: cover;
+    object-fit: $cubrir;
     float: $derecha;
 }

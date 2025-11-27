@@ -4,15 +4,13 @@
   width: 350px;
 }
 
-
+//Configuración letras 
+$letraTamanyo:14px;
 $border-radius: 8px;
-$border-style: "solid";
+$border-radius-grande:18px;
 $border-width: 1px;
-$without-border: none;
-$izquierda:left;
-$derecha:right;
-$width100:100%;
-$height100:100%;
+$widthmaximo:100%;
+$heightmaximo:100%;
 
 //Dimensiones botones
 $btn-padding-topybottom:5px;
@@ -25,10 +23,17 @@ $card-width: 350px;
 $card-height: 370px;
 $flip-duration: 0.8s;
 $map-height: 35%;
+
 $map-radius: 16px;
 $price-border-thickness: 10px;
 
 //Dimensiones imagenes
+
+$vid-heightCompleto: 100%;
+$vid-widthCompleto: 100%;
+
+$vid-widthMedio:45%;
+$vid-heightMedio:45%;
 
 $img-width: 100%;
 $img-height: 180px;
@@ -39,4 +44,17 @@ $img-pequenya-height: 75px;
 $icon-mid-width: 35px;
 $icon-mid-height: 35px;
 
+$margenOPaddingDe5:5px;
+$margenOPaddingDe8:8px;
+$margenOPaddingDe12:12px;
+$margenOPaddingDe20:20px;
+$margenOPaddingDe40:40px;
+$margenOPaddingDe3Porciento:3%;
 
+$minHeightPantalla:20vh;
+
+$sinDimensiones:0;
+$conDimensionesMuyBajas:2px;
+$conDimensionesBajas:6px;
+$searchBar-width: 35%;
+$tamanyoCasiMaxima:80%;
