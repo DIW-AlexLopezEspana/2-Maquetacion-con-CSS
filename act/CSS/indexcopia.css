@@ -1,173 +1,4 @@
 @charset "UTF-8";
-.course {
-  width: 350px;
-}
-
-.course-completo {
-  width: 350px;
-  height: 370px;
-  display: inline-block;
-  margin: 15px;
-  position: relative;
-  vertical-align: top;
-  perspective: 1000px;
-}
-.course-completo .front,
-.course-completo .back {
-  width: 100%;
-  height: 100%;
-  border-radius: 8px;
-  backface-visibility: hidden;
-  transition: transform 0.8s;
-  position: absolute;
-  top: 0;
-  left: 0;
-  box-sizing: border-box;
-  padding: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: white;
-  overflow: hidden;
-}
-.course-completo .front {
-  z-index: 2;
-  transform: rotateY(0deg);
-}
-.course-completo .back {
-  z-index: 1;
-  transform: rotateY(180deg);
-}
-.course-completo:hover .front {
-  transform: rotateY(180deg);
-}
-.course-completo:hover .back {
-  transform: rotateY(0deg);
-}
-.course-completo.category-diseñador .back {
-  background-color: #6a5acd;
-  color: white;
-  text-align: left;
-}
-.course-completo.category-diseñador .back h4 {
-  font-weight: bold;
-  text-decoration: underline;
-  letter-spacing: 1px;
-}
-.course-completo.category-limpieza .back {
-  background-color: #2e8b57;
-  color: white;
-  text-align: left;
-}
-.course-completo.category-peluquero .back {
-  background-color: #ff69b4;
-  color: white;
-  text-align: left;
-}
-.course-completo.category-profesor .back {
-  background-color: #ffa500;
-  color: white;
-  text-align: left;
-}
-.course-completo.category-profesor .back h4 {
-  font-style: italic;
-  color: #fff;
-}
-.course-completo.category-mecanico .back {
-  background-color: #4682b4;
-  color: white;
-  text-align: left;
-}
-.course-completo.category-mecanico .back h4 {
-  color: yellow;
-  text-shadow: 0 0 3px black;
-  font-size: 1.1em;
-}
-.course-completo.category-default .back {
-  background-color: #1a4c6e;
-  color: white;
-  text-align: left;
-}
-.course-completo .front img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 8px 8px 0 0;
-  margin-bottom: 10px;
-}
-.course-completo .front h3 {
-  font-size: 18px;
-  font-weight: bold;
-  color: #333;
-  margin: 10px 0 5px;
-}
-.course-completo .front p {
-  font-size: 14px;
-  color: #666;
-  line-height: 1.4;
-  margin: 0 0 10px;
-  text-align: left;
-}
-.course-completo .front .course-footer {
-  border-top: 10px solid #c5d9f8;
-  padding-top: 10px;
-  overflow: hidden;
-}
-.course-completo .front .course-footer .price {
-  float: left;
-  font-weight: bold;
-  color: #333;
-  font-size: 14px;
-}
-.course-completo .front .course-footer button {
-  float: right;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 5px 10px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 16px;
-}
-.course-completo .front .course-footer button:hover {
-  background-color: #007bff;
-}
-.course-completo .back h4 {
-  margin: 10px 0;
-}
-.course-completo .back p {
-  font-size: 14px;
-  line-height: 1.4;
-  margin-bottom: 10px;
-  overflow-wrap: break-word;
-}
-.course-completo .back .mapa-container {
-  width: 95%;
-  height: 35%;
-  overflow: hidden;
-  border-radius: 16px;
-}
-.course-completo .back .mapa-container iframe {
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
-.course-completo .back button {
-  margin-top: 10px;
-  float: right;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 5px 10px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 12px;
-}
-.course-completo .back button:hover {
-  background-color: #007bff;
-}
-
 @keyframes heroScroll {
   100% {
     opacity: 1;
@@ -208,11 +39,18 @@
 img {
   width: 100%;
   height: 180px;
+  border-radius: 18px;
 }
 
 .hero-video {
   object-fit: cover;
   float: right;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 header {
@@ -289,6 +127,21 @@ button {
   border-radius: 8px;
 }
 
+.btn-trasera {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.btn-trasera:hover {
+  background-color: #0056b3;
+}
+.btn-trasera {
+  margin-top: 10px;
+  float: right;
+}
+
 .hero {
   position: relative;
   padding: 40px 20px;
@@ -347,6 +200,136 @@ button {
 }
 .hero .search-container .search-bar button {
   padding: 8px;
+}
+
+.mapa-container {
+  width: 95%;
+  height: 35%;
+  overflow: hidden;
+  border-radius: 16px;
+  margin-bottom: 5px;
+}
+.mapa-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.course-completo {
+  width: 350px;
+  height: 370px;
+  perspective: 1000px;
+  display: inline-block;
+  margin: 15px;
+  position: relative;
+  vertical-align: top;
+}
+.course-completo .course,
+.course-completo .course-trasera {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  backface-visibility: hidden;
+  transition: transform 0.8s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  overflow: hidden;
+}
+.course-completo .course h3, .course-completo .course h4,
+.course-completo .course-trasera h3,
+.course-completo .course-trasera h4 {
+  margin: 10px 0;
+}
+.course-completo .course p,
+.course-completo .course-trasera p {
+  font-size: 14px;
+  line-height: 1.4;
+  margin-bottom: 10px;
+  overflow-wrap: break-word;
+}
+.course-completo .course {
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+.course-completo .course-trasera {
+  z-index: 1;
+  transform: rotateY(180deg);
+  color: white;
+  text-align: left;
+}
+.course-completo.category-diseñador .course-trasera {
+  background-color: #6a5acd;
+}
+.course-completo.category-limpieza .course-trasera {
+  background-color: #2e8b57;
+}
+.course-completo.category-peluquero .course-trasera {
+  background-color: #ff69b4;
+}
+.course-completo.category-profesor .course-trasera {
+  background-color: #ffa500;
+}
+.course-completo.category-mecanico .course-trasera {
+  background-color: #4682b4;
+}
+.course-completo.category-default .course-trasera {
+  background-color: #1a4c6e;
+}
+.course-completo:hover .course {
+  transform: rotateY(180deg);
+}
+.course-completo:hover .course-trasera {
+  transform: rotateY(0deg);
+}
+.course-completo .course-footer {
+  border-top: 10px solid #c5d9f8;
+  padding-top: 10px;
+  overflow: hidden;
+}
+.course-completo .course-footer .price {
+  float: left;
+  font-weight: bold;
+  color: #333;
+  font-size: #333;
+}
+
+.container {
+  background-color: white;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  padding: 20px;
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+  margin-top: -2%;
+}
+.container .courses {
+  float: left;
+  width: 100%;
+  padding: 20px;
+  overflow: hidden;
+  text-align: center;
+}
+.container .proximamente {
+  float: right;
+  width: 30%;
+  height: 15%;
+  margin-right: 35%;
+  border-radius: 8px;
+  background-color: #1a4c6e;
+  text-align: center;
+  color: white;
+  font-size: 26px;
+  font-weight: bold;
+  overflow: hidden;
+}
+.container .proximamente p {
+  animation: pulse 1.6s infinite;
 }
 
 footer {

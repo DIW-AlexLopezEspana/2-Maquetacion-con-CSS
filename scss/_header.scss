@@ -4,6 +4,13 @@
 @use "colores" as *;
 @use "mixins" as *;
 
+
+body{
+    margin: $sinDimensiones ;
+    padding: $sinDimensiones ;
+    overflow-x: $oculto;
+}
+
 header {
 overflow: $oculto;
   .logo-container {

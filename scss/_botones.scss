@@ -9,3 +9,8 @@
 button {
   @include btn-disenyos("btn-basico");
 }
+
+.btn-trasera {
+  @include btn-disenyos("btn-trasera");
+
+}

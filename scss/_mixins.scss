@@ -21,7 +21,13 @@
     font-weight: $texto-Oscuro;
     width: $btn-width20;
     box-sizing: $tamanyo-caja;
-    border-radius: $sinDimensiones $margenOPaddingDe20 $margenOPaddingDe20 $sinDimensiones;
+    border-radius: $sinDimensiones
+      $margenOPaddingDe20
+      $margenOPaddingDe20
+      $sinDimensiones;
+  } @else if $class == "btn-trasera" {
+    margin-top: $margenOPaddingDe10;
+    float: $derecha;
   } @else {
     float: $izquierda;
     border-radius: $border-radius;
@@ -38,6 +44,7 @@
   } @else {
     width: $img-width;
     height: $img-height;
+    border-radius: $border-radius-grande;
   }
 }
 
@@ -48,8 +55,6 @@
     animation: heroScroll 1.5s $linear $ambos;
   }
 }
-
-
 
 @mixin flip-card($duration: 0.8s) {
   perspective: 1000px;
