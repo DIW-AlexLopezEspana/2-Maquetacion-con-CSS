@@ -1,0 +1,11 @@
+@use "colores" as *;
+@use "dimensiones" as *;
+@use "caracteristicas" as *;
+
+footer {
+  background-color: $color-footer;
+  text-align: $centrar;
+  padding: $margenOPaddingDe12;
+  clear: $ambos;
+  margin-top: $margenOPaddingDe20;
+}

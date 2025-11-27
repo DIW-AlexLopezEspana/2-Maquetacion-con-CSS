@@ -4,12 +4,12 @@
 @use "animaciones" as *;
 @use "caracteristicas" as *;
 
-
 @mixin btn-disenyos($class) {
   background-color: $color-btn;
   color: $color-background-page;
   border: $without-border;
   padding: $btn-padding-topybottom $btn-padding-rightyleft;
+
   cursor: $puntero;
 
   &:hover {
@@ -18,12 +18,13 @@
 
   @if $class == "btnSearch-bar" {
     float: $derecha;
-    width: $btn-width20;
     font-weight: $texto-Oscuro;
+    width: $btn-width20;
     box-sizing: $tamanyo-caja;
+    border-radius: $sinDimensiones $margenOPaddingDe20 $margenOPaddingDe20 $sinDimensiones;
   } @else {
-    border-radius: $border-radius;
     float: $izquierda;
+    border-radius: $border-radius;
   }
 }
 

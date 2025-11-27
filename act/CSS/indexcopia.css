@@ -3,70 +3,6 @@
   width: 350px;
 }
 
-@keyframes heroScroll {
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  0% {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-}
-@keyframes vibrar {
-  5%, 25%, 45%, 65%, 85% {
-    transform: translateX(-5px);
-  }
-  15%, 35%, 55%, 75%, 95% {
-    transform: translateX(5px);
-  }
-}
-@keyframes pulse {
-  0% {
-    opacity: 0.4;
-    transform: scale(0.97);
-  }
-  50% {
-    opacity: 1;
-    transform: scale(1);
-  }
-  100% {
-    opacity: 0.4;
-    transform: scale(0.97);
-  }
-}
-.btnSearch-bar {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 5px 10px;
-  cursor: pointer;
-}
-.btnSearch-bar:hover {
-  background-color: #0056b3;
-}
-.btnSearch-bar {
-  float: right;
-  width: 20%;
-  font-weight: bold;
-  box-sizing: border-box;
-}
-
-button {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 5px 10px;
-  cursor: pointer;
-}
-button:hover {
-  background-color: #0056b3;
-}
-button {
-  border-radius: 8px;
-  float: left;
-}
-
 .course-completo {
   width: 350px;
   height: 370px;
@@ -232,6 +168,38 @@ button {
   background-color: #007bff;
 }
 
+@keyframes heroScroll {
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+}
+@keyframes vibrar {
+  5%, 25%, 45%, 65%, 85% {
+    transform: translateX(-5px);
+  }
+  15%, 35%, 55%, 75%, 95% {
+    transform: translateX(5px);
+  }
+}
+@keyframes pulse {
+  0% {
+    opacity: 0.4;
+    transform: scale(0.97);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0.4;
+    transform: scale(0.97);
+  }
+}
 .profile-icon {
   width: 35px;
   height: 35px;
@@ -286,6 +254,39 @@ header .profile-icon {
   height: 35px;
   border-radius: 18px;
   line-height: 80px;
+}
+
+.btnSearch-bar {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.btnSearch-bar:hover {
+  background-color: #0056b3;
+}
+.btnSearch-bar {
+  float: right;
+  font-weight: bold;
+  width: 20%;
+  box-sizing: border-box;
+  border-radius: 0 20px 20px 0;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #0056b3;
+}
+button {
+  float: left;
+  border-radius: 8px;
 }
 
 .hero {
@@ -343,6 +344,17 @@ header .profile-icon {
   border-radius: 18px 0 0 18px;
   font-size: 14px;
   box-sizing: border-box;
+}
+.hero .search-container .search-bar button {
+  padding: 8px;
+}
+
+footer {
+  background-color: #c5d9f8;
+  text-align: center;
+  padding: 12px;
+  clear: both;
+  margin-top: 20px;
 }
 
 /*# sourceMappingURL=indexcopia.css.map */
